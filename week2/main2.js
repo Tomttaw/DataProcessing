@@ -1,7 +1,7 @@
 /* use this to test out your function */
 window.onload = function() {
  
-
+	// data about income equality per country (I wanted to put this info inside a textbox in the html but somehow I couldn't get my code working that way)
 	var mapdata = {
       "data" : 
       [
@@ -43,20 +43,21 @@ window.onload = function() {
 		var country = document.getElementById(mapdata.data[i].Country_code);
 		console.log(mapdata.data[i].Country_code);
 		console.log(mapdata.data[i].gini_index);
+
 		if (mapdata.data[i].gini_index >= 35) {
-			country.style.fill = "#d7301f";
+			country.style.fill = "#a50f15";
 		};
 
 		if (mapdata.data[i].gini_index >= 30 & mapdata.data[i].gini_index < 35) {
-			country.style.fill = "#fc8d59";
+			country.style.fill = "#de2d26";
 		};
 
 		if (mapdata.data[i].gini_index >= 25 & mapdata.data[i].gini_index < 30) {
-			country.style.fill = "#fdcc8a";
+			country.style.fill = "#fb6a4a";
 		};
 
 		if (mapdata.data[i].gini_index >= 20 & mapdata.data[i].gini_index < 25) {
-			country.style.fill = "#fef0d9";
+			country.style.fill = "#fcae91";
 		};
 	}
 };
