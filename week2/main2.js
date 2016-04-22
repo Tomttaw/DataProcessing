@@ -24,7 +24,7 @@ window.onload = function() {
         {"gini_index": "35", "Country_code": "lt"},
         {"gini_index": "35.5", "Country_code": "lv"},
         {"gini_index": "35.2", "Country_code": "mk"},
-        {"gini_index": "26.2", "Country_code": "nld"},
+        {"gini_index": "26.2", "Country_code": "nl"},
         {"gini_index": "23.5", "Country_code": "no"},
         {"gini_index": "30.8", "Country_code": "pl"},
         {"gini_index": "34.5", "Country_code": "pt"},
@@ -33,16 +33,15 @@ window.onload = function() {
         {"gini_index": "25.4", "Country_code": "se"},
         {"gini_index": "25", "Country_code": "si"},
         {"gini_index": "26.1", "Country_code": "sk"},
-        {"gini_index": "", "Country_code": "tr"},
         {"gini_index": "31.6", "Country_code": "gb"}
         ]
     } 
-
+    // iterate over data and fill with corresponding color
 	for(var i = 0; i < mapdata.data.length; i++)
 	{
 		var country = document.getElementById(mapdata.data[i].Country_code);
-		console.log(mapdata.data[i].Country_code);
-		console.log(mapdata.data[i].gini_index);
+		//console.log(mapdata.data[i].Country_code);
+		//console.log(mapdata.data[i].gini_index);
 
 		if (mapdata.data[i].gini_index >= 35) {
 			country.style.fill = "#a50f15";
