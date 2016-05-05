@@ -73,7 +73,12 @@
 		      .attr("width", x.rangeBand())
 		      .on('mouseover', datahover.show)
 		      .on('mouseout', datahover.hide);
-
+		  svg.append("text")
+	        .attr("x", (width / 2))             
+	        .attr("y", 0 - (margin.top / 10))
+	        .attr("text-anchor", "middle")  
+	        .style("font-size", "24px")
+	        .text("Average mm rainfall per month in 2015 (The Bilt)");
 
 		});
 		function type(d) {
